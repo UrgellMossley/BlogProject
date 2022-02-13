@@ -1,3 +1,4 @@
+Plan and record of the project: https://docs.google.com/document/d/1nxla9iSEJsZ_k_W_yKEsYSGqs_smv8HyvB80DOBMeSo/edit
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

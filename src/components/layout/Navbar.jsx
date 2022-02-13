@@ -1,16 +1,17 @@
 import { Sling as Hamburger } from 'hamburger-react'
-import {useState} from 'react'; 
+import {useContext} from 'react'; 
+import BlogContext from '../../context/BlogContext';
 
 //remember to push up context/state to context/reducer
 function Navbar() {
-const [isOpen, setOpen] = useState(false)
+    const { isOpen,dispatch } = useContext(BlogContext)
 
-const handleToggle = ()=>{
-    
-     setOpen(!isOpen)
-    isOpen ? document.querySelector(`#links`).style.display = "flex" : document.querySelector(`#links`).style.display = "none"
+    const handleToggle = ()=>{
+        console.log(isOpen)
 
-}
+        dispatch({ type: "TOGGLE_NAV", payload: isOpen})
+        console.log(isOpen)
+    }
   return (
       <>
           <nav className="flex flex-row justify-between navbar bg-black shadow-xl py-2">
@@ -28,7 +29,7 @@ const handleToggle = ()=>{
 
 
           </nav>
-          <ul id="links" className="hidden flex h-60 bg-black m-0 shadow-xl -translate-y-10 flex-col items-center m-2">
+          <ul id="links" className={`${isOpen ? `flex` : `hidden`} h-60 bg-black m-0 shadow-xl sticky top-0 z-50 flex-col items-center m-2`}>
               <li className="inline my-5 w-20"><a className="align-middle  hover:scale-125 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">Home</a></li>
               <li className="inline my-5 w-20"><a className="align-middle  hover:scale-125 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">GitHub</a></li>
               <li className="inline my-5 w-20"><a className="align-middle  hover:scale-125 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">Contact</a></li>
