@@ -14,7 +14,7 @@ function Navbar() {
     }
   return (
       <>
-          <nav className="flex flex-row justify-between navbar bg-black shadow-xl py-2">
+          <nav className="flex sticky top-0 z-50 flex-row justify-between navbar bg-black shadow-xl py-2">
               <button className="btn border-2 btn-ghost h-10 text-xl w-20 text-purple-700 mx-5">TFAW</button>
               <Hamburger size={32}
                   easing='ease-out'
@@ -29,7 +29,7 @@ function Navbar() {
 
 
           </nav>
-          <ul id="links" className={`${isOpen ? `flex` : `hidden`} h-60 bg-black m-0 shadow-xl sticky top-0 z-50 flex-col items-center m-2`}>
+          <ul id="links" className={`${isOpen ? `flex` : `hidden`} w-full hover:opacity-100 opacity-75 fixed bottom-100 h-full bg-black m-0 shadow-xl flex-col items-center m-2`}>
               <li className="inline my-5 w-20"><a className="align-middle  hover:scale-125 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">Home</a></li>
               <li className="inline my-5 w-20"><a className="align-middle  hover:scale-125 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">GitHub</a></li>
               <li className="inline my-5 w-20"><a className="align-middle  hover:scale-125 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">Contact</a></li>

@@ -2,6 +2,7 @@ import Navbar from "./components/layout/Navbar";
 import Header from "./components/layout/Header";
 import Showcase from "./components/Showcase"
 import {BlogProvider} from "./context/BlogContext"
+import Footer from "./components/layout/Footer";
 function App() {
   return (
     <BlogProvider>
@@ -12,7 +13,7 @@ function App() {
           <Showcase />
         </main>
       
-   
+        <Footer/>
       </BlogProvider>
   );
 }
