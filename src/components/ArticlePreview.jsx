@@ -3,10 +3,10 @@ import stock from '../assets/img/stock.jpg'
 
 function ArticlePreview({title,img,leadText,date}) {
   return (
-      <article className='relative border-solid xxs:px-0 xs:px-5 sm:px-0 border-slate-200 border-rounded '>
+      <article className='relative hover:scale-105 border-solid xxs:px-0 xs:px-5 sm:px-0 border-slate-200 border-rounded '>
           <h3 className='absolute z-10 top-5 hover:underline text-slate-200 text-3xl px-3'>{title}</h3>
           <img className='col-span-3  z-0 row-span-2 object-fit  hover:brightness-50' src={img} alt="placeholder" />
-          <p className='absolute z-10 bottom-5 text-2xl text-slate-200 px-3'>{leadText}</p>
+      <p className='absolute z-10 bottom-5 xxs:text-lg text-2xl text-slate-200 px-3'>{leadText}</p>
           <small className='text-slate-200 absolute bottom-10 py-2 px-3'>{date}</small>
     </article>
   )
@@ -14,7 +14,7 @@ function ArticlePreview({title,img,leadText,date}) {
 ArticlePreview.propTypes = {
     title: PropTypes.string.isRequired,
     leadText: PropTypes.string.isRequired,
-    img: PropTypes.isRequired,
+    img: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired
 };
 

@@ -22,8 +22,18 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    borderWidth: {
+      '1': '1px',
+      '2': '2px',
+      '3': '3px'
+    },
 
-    extend: {},
+    extend: {
+
+      gridTemplateRows:{
+        'articleLayout': '100px minmax(0, 1fr)'
+      }
+    },
   },
   plugins: [],
 }

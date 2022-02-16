@@ -6,12 +6,8 @@ import BlogContext from '../../context/BlogContext';
 function Navbar() {
     const { isOpen,dispatch } = useContext(BlogContext)
 
-    const handleToggle = ()=>{
-        console.log(isOpen)
-
-        dispatch({ type: "TOGGLE_NAV", payload: isOpen})
-        console.log(isOpen)
-    }
+    const handleToggle = ()=> dispatch({ type: "TOGGLE_NAV", payload: isOpen})
+    
   return (
       <>
           <nav className="flex sticky top-0 z-50 flex-row justify-between navbar bg-black shadow-xl py-2">
