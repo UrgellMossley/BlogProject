@@ -10,7 +10,7 @@ const footerYear = new Date().getFullYear();
               <FaLinkedin className='hover:text-purple-900 text-3xl text-slate-200' />
         </nav>
         
-        <aside className='px-3 text-slate-200'>Copyright &copy {footerYear}. All Rights Reserved</aside>
+        <aside className='px-3 text-slate-200'>Copyright &copy; {footerYear}. All Rights Reserved</aside>
     </footer>
   )
 }

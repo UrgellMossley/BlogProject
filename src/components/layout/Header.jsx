@@ -2,7 +2,7 @@ import ProfilePic from "../../assets/img/profilePic.jpg"
 function Header() {
     /* Todo: create a slide show for figure el and rotate through  4 differnt images every 3 s*/
   return (
-      <header className="container grid content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-100 lg:h-screen m-auto gap-8 mb-10 lg:mb-20">
+      <header className=" bg-slate-900 grid content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-100 lg:h-screen gap-8">
           <h1 className="md:col-span-2 lg:col-span-full text-6xl text-center mt-5 text-gray-100 font-bold px-2">
             Tales From Along The Way
         </h1>

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .hamburger-react{
   z-index: 1000;
   color: #fff;

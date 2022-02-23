@@ -6,7 +6,17 @@ const BlogReducer = (state,action)=>{
                 isOpen: !action.payload
             }
             
-    
+        case "SET_ARTICLES":
+            return{
+                
+                ...state,
+                articles: action.payload
+            }
+        case "GET_ARTICLE":
+            return{
+                ...state,
+                currentArticle: action.payload
+            }
         default:
             return state;
     }
