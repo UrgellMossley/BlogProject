@@ -9,7 +9,6 @@ function ArticleInfo() {
         <h3 className="lg:row-span-1 col-span-full text-5xl font-bold p-4 mt-2 xs:text-center lg:text-left">Articles</h3>
           <article className="flex row-start-2 flex-col col-span-4">
         {articles && articles.map((item)=>{
-            console.log(item.link)
             return <section className="grow  p-4 border-b-1 border-black last:mb-2 ">
               <Link className="text-xl font-bold" to={`/post/${item.link}`}><h4>{item.title}</h4></Link>  
                       <p className='mb-4'>{item.leadText} Written on: {item.date}</p>
