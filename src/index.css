@@ -12,3 +12,9 @@
     display: none;
   }
 }
+
+.fill{
+  background: linear-gradient(0deg, rgba(49, 49, 49, 0.3), rgba(116, 115, 115, 0.3)),url(./assets/img/splash.jpg);
+  background-size:cover;
+
+}

@@ -26,6 +26,7 @@ export const BlogProvider = ({ children })=>{
         const res = await articles.json()
         return dispatch({ type: "SET_ARTICLES", payload: res})
     }
+   
     
     useEffect(() => {
         artcleArr();
