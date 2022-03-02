@@ -68,7 +68,7 @@ Output: 21
               <p className='my-4 mx-2 text-lg whitespace-pre-line px-1'>NB: I’m not sure if LeetCode is banning higher order arrays, I actually think I was getting an error as my Function was not explicitly called reverse, which is a bit embarrassing!</p>
               <p className='my-4 mx-2 text-lg whitespace-pre-line px-1'>The good news is that my solution was pretty performant, completing faster than a big chunk of users, and used a bit less memory too :</p>
             <article className='flex items-center justify-center'>
-                  <img className="mt-2 mb-6" src={IntegerImg} alt="image of algorithm results" />
+                  <img loading="lazy" className="mt-2 mb-6" src={IntegerImg} alt="image of algorithm results" />
             </article>
 
         </section>
