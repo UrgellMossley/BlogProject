@@ -2,9 +2,11 @@ import img from '../../assets/img/howMuch.jpg'
 import Blurb from '../../components/pageComponents/Blurb'
 import BlogHeader from '../../components/pageComponents/BlogHeader'
 function HowMuch() {
+//Static page with paragrpahs and code blocks
   return (
 
-    <div className='flex flex-col h-fit items-center justify-apart'>
+    <article className='flex flex-col h-fit items-center justify-apart md:px-36 xxs:px-6'>
+    {/* imports som components that can pass in data to streamline styling */}
           <BlogHeader img={img} name={"How Much is True?"}/>
           <Blurb title={`Create a function which returns the number of true values there are in an array.`} tag={`       Notes: Return 0 if given an empty array. All array items are of the type bool (true or false).`}/>
       
@@ -33,7 +35,7 @@ function HowMuch() {
           </p>
         </section>
           
-    </div>
+    </article>
   )
 }
 

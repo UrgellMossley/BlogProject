@@ -3,8 +3,10 @@ import Blurb from '../../components/pageComponents/Blurb';
 import BlogHeader from '../../components/pageComponents/BlogHeader';
 import IntegerImg from '../../assets/img/integerResults.png'
 function ReverseInteger() {
+  //Static page with paragrpahs and code blocks
+
   return (
-    <div>
+    <article className="md:px-36 xxs:px-6" >
           <BlogHeader img={img} name={"Reverse Integer"} />
           <Blurb title={`Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.`} tag={`Assume the environment does not allow you to store 64-bit integers (signed or unsigned).`}/>
         <section className='px-3'>
@@ -64,15 +66,15 @@ Output: 21
 
 `}</pre>
               <p className='my-4 mx-2 text-lg whitespace-pre-line px-1'>NB: I’m not sure if LeetCode is banning higher order arrays, I actually think I was getting an error as my Function was not explicitly called reverse, which is a bit embarrassing!</p>
-              <p className='my-4 mx-2 text-lg whitespace-pre-line px-1'>The good news is that my solution was pretty performant, completing faster than a big chunk of users, and used a bit less memory too :)</p>
+              <p className='my-4 mx-2 text-lg whitespace-pre-line px-1'>The good news is that my solution was pretty performant, completing faster than a big chunk of users, and used a bit less memory too :</p>
             <article className='flex items-center justify-center'>
                   <img className="mt-2 mb-6" src={IntegerImg} alt="image of algorithm results" />
             </article>
 
         </section>
 
-    </div>
+    </article>
   )
-}
 
+}
 export default ReverseInteger

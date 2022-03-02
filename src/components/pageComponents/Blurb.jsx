@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-
+//component for styling header information
 function Blurb({title, tag}) {
   return (
       <section className='px-3 mb-4'>

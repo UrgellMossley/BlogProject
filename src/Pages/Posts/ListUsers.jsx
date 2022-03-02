@@ -1,10 +1,12 @@
 import BlogHeader from "../../components/pageComponents/BlogHeader"
 import Img from '../../assets/img/stock.jpg'
 import Blurb from "../../components/pageComponents/Blurb"
+
 function ListUsers() {
-    let forname,surname, age
+    //Static page with paragrpahs and code blocks
+
   return (
-    <div>
+      <article className="md:px-36 xxs:px-6">
           <BlogHeader name={"List the Users!"} img={Img}/>
           <Blurb title={"Print out to the console, an ordered list of “active” users by increasing surname (in alphabetical order). Output the data in a string showing the user’s name and age to the whole number"} tag={"Constraints: Time limit of 30 minutes"} />
         <section className="px-3">
@@ -57,7 +59,7 @@ list.forEach((item)=>{
     console.log({forname} {surname} is {age})
 })`}</pre>
        </section>
-    </div>
+    </article>
     
   )
 }

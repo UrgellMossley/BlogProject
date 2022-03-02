@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
 import stock from '../assets/img/stock.jpg'
 function ArticlePreview(article) {
-    
+    //destructure variables from the article object
   const {title,img,leadText,date} = article.value
+  //uses img tag from obj for dynamic image loading
   let image = require(`../assets/img/${img}.jpg`)
-
+  //error handling
   try {
     if (!image) image = stock
   } catch (error) {
@@ -12,7 +12,7 @@ function ArticlePreview(article) {
   }
 
   return (
-      <article className={`relative object-fit hover:scale-105 border-solid xxs:px-0 xs:px-5 sm:px-0 border-slate-200 border-rounded`}>
+    <article className={`relative object-fit transition-transform hover:scale-105 hover:-translate-y-3 ease-in-out delay-300 border-solid xxs:px-0 xs:px-5 sm:px-0 border-slate-200 duration-150 border-rounded`}>
         <h3 className='absolute z-10 top-5 hover:underline text-slate-200 text-3xl px-3'>{title}</h3>
         <img className='col-span-3  z-0 row-span-2 h-48 w-80 object-fit  brightness-75' src={image} alt="placeholder" />
         <p className='absolute z-10 bottom-5 xxs:text-sm font-bold text-xl text-slate-200 px-3'>{leadText}</p>
@@ -20,20 +20,6 @@ function ArticlePreview(article) {
     </article>
   )
 }
-/* ArticlePreview.propTypes = {
-    title: PropTypes.string.isRequired,
-    leadText: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired
-};
-
-
-ArticlePreview.defaultProps = {
-    title: 'Blog Post',
-    img: stock,
-    leadText: `This is a placeholder message..`,
-    date: `Febuaray 14/2/22`
-}; */
 
 
 export default ArticlePreview;

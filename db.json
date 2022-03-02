@@ -1,5 +1,5 @@
 { "articles":[{
-    "date": "January 24, 2022",
+    "date": "January 28, 2022",
     "title": "Reverse Integer",
     "link": "reverse-integer",
     "leadText": "A real world interview coding challenge.",
@@ -7,7 +7,7 @@
     "chips": ["LeetCode","Coding Challenge","JavaScript" ]
 },
 {
-    "date": "January 1, 2022",
+    "date": "Febuary 2, 2022",
     "title": "List the Users!",
     "link": "list-users",
     "leadText": "A Real world interview question attacks!",
@@ -15,7 +15,7 @@
     "chips": ["Coding Challenge","JavaScript"]
 },
 {
-    "date": "Febuary 2, 2022",
+    "date": "January 24, 2022",
     "title": "How Much is True?",
     "link": "how-much",
     "leadText": "A challenge from an earlier time..",
