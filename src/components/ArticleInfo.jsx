@@ -7,7 +7,7 @@ function ArticleInfo() {
 const [targetDate, setDate] = useState(null)
 //async function that will set the target date to a date held in DB
 const fetchDate = async () =>{
-  const req = await fetch(`/timeStamp`)
+  const req = await fetch(`https://json-server-test-master.herokuapp.com/timeStamp`)
   const res = await req.json();
   //returns an arr, so pull out 1st item
   return setDate(res[0])
