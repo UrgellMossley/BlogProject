@@ -31,8 +31,8 @@ function Navbar() {
               <li onClick={handleToggle} className="inline my-5 w-20"><NavLink exact to={"/"} className={({ isActive }) => "align-middle text-slate-200 hover:text-purple-700 px-2" + (isActive ? " text-purple-700" : "")} rel="norefferer">Home</NavLink></li>
               <li onClick={handleToggle} className="inline my-5 w-20"><NavLink exact to={"/about"} className={({ isActive }) => "align-middle text-slate-200 hover:text-purple-700 px-2" + (isActive ? " text-purple-700" : "")} rel="norefferer">About</NavLink></li>
 
-              <li className="inline my-5 w-20"><a className="align-middle  hover:scale-105 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">GitHub</a></li>
-              <li className="inline my-5 w-20"><a className="align-middle  hover:scale-105 hover:text-purple-700  px-2 text-gray-200" href="/" rel="norefferer">Contact</a></li>
+              <li className="inline my-5 w-20"><a className="align-middle  hover:scale-105 hover:text-purple-700  px-2 text-gray-200" href="https://github.com/UrgellMossley/BlogProject" rel="norefferer">GitHub</a></li>
+              <li className="inline my-5 w-20"><a className="align-middle  hover:scale-105 hover:text-purple-700  px-2 text-gray-200" href="https://www.linkedin.com/in/george-edem-958b8b174/" rel="norefferer">Contact</a></li>
           </ul>
       </>
       
