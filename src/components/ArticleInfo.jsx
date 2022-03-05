@@ -60,8 +60,8 @@ useEffect(()=>{
           <aside className="justify-center items-start flex-col xxs:hidden lg:flex lg:col-span-2 shadow-xl px-3 py-1 h-40 m-1 border-1 rounded">
               <h4 className="text-2xl text-purple-800"><span className="font-bold text-black">Next Article:</span> "Functions and Objects"</h4>
               <h6 className="text-xl text-purple-800"><span className="font-bold text-black">ETA:</span> {`${dayArr[day]}, ${date}.${month}.${year} at ${hours}:${minutes < 10 ? minutes.toString().padStart(2, 0) : minutes} CET`}</h6>
-              {/* use some conditional logic to check the type of that normalised value. If the differene is less tahn 1 day away we  */}
-              <small className='text-base font-bold'>{typeof normalised === "number" ? `That's ${normalised} days away!`: normalised}</small>
+              {/* use some conditional logic to check the type of that normalised value. If the differene is less tahn 1 day away we ammend the string  */}
+        <small className='text-base font-bold'>{typeof normalised === "number" && normalised >= 2? `That's ${normalised} days away!` : (typeof normalised === "number" && normalised < 2) ? `That's ${normalised} day away!` : normalised}</small>
           </aside>
     </section>
   )

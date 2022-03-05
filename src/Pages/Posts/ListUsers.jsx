@@ -19,7 +19,7 @@ function ListUsers() {
         </section>
         <section className="px-3">
             <h3>Example:</h3>
-              <pre className='xxs:px-2 px-5 py-5 bg-slate-700 text-slate-200'>{`"TOM CAT is 80 years old."
+              <pre className='xxs:px-2 px-5 py-5 xxs:overflow-x-scroll bg-slate-700 text-slate-200'>{`"TOM CAT is 80 years old."
 "MICKEY MOUSE is 92 years old."
 "JERRY THEMOUSE is 80 years old."`}</pre>
         </section>
